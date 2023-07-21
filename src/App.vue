@@ -1,5 +1,5 @@
 <template>
-  <asciinema-player startAt="0:00" poster="0:00" speed="1" :fontSize="12" :src="data_url"  theme="tango"/>
+  <asciinema-player startAt="0:00" poster="0:00" :speed="1" :fontSize="12" :src="data_url"  theme="tango"/>
   <div id="demo"></div>
 </template>
 <script lang="ts">
@@ -11,7 +11,7 @@ export default defineComponent({
   },
   setup() {
     const data_url =
-      "https://e61id1-bucket-demo.oss.laf.run/record.cast";
+      "https://e61id1-bucket-demo.oss.laf.run/demo.cast";
 
     return {
       data_url,
